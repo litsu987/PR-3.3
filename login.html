@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Segur</title>
+</head>
+<body>
+    <h1>Iniciar Sesión</h1>
+    <h3>LOGIN SEGUR</h3>
+    <form action="segura.php" method="post">
+        <label for="username">Nombre de Usuario:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+    <br><br>
+    <h3>LOGIN NO SEGUR</h3>
+    <h1>SQL INJECTION</h1>
+    <form action="NOsegura.php" method="post">
+        User: <input type="text" name="user" /><br>
+        Pass: <input type="text" name="password" /><br>
+        <input type="submit" /><br>
+    </form>
+</body>
+</html>
